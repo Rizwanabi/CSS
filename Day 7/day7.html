@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day7</title>
+        <style>
+             .c{
+                text-align: center;
+                background-color: pink;
+                width: 600px;
+                height: 100px;
+                padding: 20px 20px 20px 20px;
+                margin: 20px 20px;
+                margin-left: 65px;
+                margin-bottom: 50px;
+                border: 2px;
+                display: inline-block; 
+                text-transform: uppercase;
+                text-shadow: 20px 2px 5px red,20px 2px 5px blue;
+                font-family: cursive; 
+                font-weight: 600;
+            }
+            .ch{
+                text-align: center; 
+                background-color: skyblue;
+                width: 600px;
+                height: 100px;
+                padding: 20px 20px 20px 20px;
+                margin: 20px 20px;
+                margin-left: 65px;
+                margin-bottom: 50px;
+                border: 2px;
+                display: inline-block;
+                text-transform: uppercase;
+                text-shadow: 20px 2px 5px red,20px 2px 5px yellow;
+                font-family: cursive;
+                font-weight: 600;
+                /* direction: rtl;
+                unicode-bidi: bidi-override; */
+            }
+            .r{
+                text-align: center;
+                background-color: silver;
+                width: 250px;
+                height: 80px;
+                padding: 20px 20px 20px 20px;
+                margin: 20px 20px;
+                margin-left: 65px;
+                margin-bottom: 50px;
+                border: 2px;
+                border-radius: 20px;
+                display: inline-block;
+                text-transform: uppercase;
+                text-shadow: 20px 2px 5px purple,20px 2px 5px white;
+                font-family: cursive;
+                font-weight: 600;
+            }
+            .kotlin{
+                text-align: center;
+                background-color: greenyellow;
+                width: 250px;
+                height: 80px;
+                padding: 20px 20px 20px 20px;
+                margin: 20px 20px;
+                margin-left: 30px;
+                margin-right: 70px;
+                border: 2px;
+                border-radius: 20px;
+                display: inline-block;
+                text-transform: uppercase;
+                text-shadow: 20px 2px 5px red,20px 2px 5px black;
+                direction: ltr;
+                unicode-bidi: bidi-override;
+                font-family: cursive;
+                font-weight: 600;
+            }
+            .json{
+                text-align: center;
+                background-color: darksalmon;
+                width: 250px;
+                height: 80px;
+                padding: 20px 20px 20px 20px;
+                margin: 20px 20px;
+                margin-left: 20px;
+                margin-right: 50px;
+                border: 2px;
+                border-radius: 20px;
+                display: inline-block;
+                text-transform: uppercase;
+                text-shadow: 20px 2px 5px white,20px 2px 5px black;
+                font-family: cursive;
+                font-weight: 600;
+            }
+            .nodejs{
+                text-align: center;
+                background-color: gainsboro;
+                width: 250px;
+                height: 80px;
+                padding: 20px 20px 20px 20px;
+                margin: 20px 20px;
+                margin-left: 20px;
+                margin-right: 50px;
+                border: 2px;
+                border-radius: 20px;
+                display: inline-block;
+                text-transform: uppercase;
+                text-shadow: 20px 2px 5px gold,20px 2px 5px black;
+                font-family: cursive;
+                font-weight: 600;
+            }
+            .reactjs{
+                text-align: center;
+                background-color: darkorange;
+                width: 250px;
+                height: 80px;
+                padding: 20px 20px 20px 20px;
+                margin: 20px 20px;
+                margin-left: 60px;
+                margin-right: 20px;
+                border: 2px;
+                border-radius: 20px;
+                display: inline-block;
+                text-transform: uppercase;
+                text-shadow: 20px 2px 5px darkviolet,20px 2px 5px black;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: 500;
+            }
+            .vue{
+                text-align: center;
+                background-color: floralwhite;
+                width: 250px;
+                height: 80px;
+                padding: 20px 20px 20px 20px;
+                margin: 20px 20px;
+                margin-left: 40px;
+                margin-right: 50px;
+                border: 2px;
+                border-radius: 20px;
+                display: inline-block; 
+                text-transform: uppercase;
+                text-shadow: 20px 2px 5px yellow,20px 2px 5px black;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: 500;  
+            }
+            .mysql{
+                text-align: center;
+                background-color: indianred;
+                width: 250px;
+                height: 80px;
+                padding: 20px 20px 20px 20px;
+                margin: 20px 20px;
+                margin-left: 40px;
+                margin-right: 50px;
+                border: 2px;
+                border-radius: 20px;
+                display: inline-block;
+                text-transform: uppercase;  
+                text-shadow: 20px 2px 5px aquamarine,20px 2px 5px brown; 
+                direction: rtl;
+                unicode-bidi: bidi-override;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: 500; 
+            }
+            .xml{
+                text-align: center;
+                background-color: khaki;
+                width: 250px;
+                height: 80px;
+                padding: 20px 20px 20px 20px;
+                margin: 20px 20px;
+                /* margin-left: 40px; */
+                /* margin-right: 50px; */
+                border: 2px;
+                border-radius: 20px;
+                display: inline-block;
+                text-transform: uppercase;
+                text-shadow: 20px 2px 5px red,20px 2px 5px blue; 
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: 500;
+            }
+            .saas{
+                text-align: center;
+                background-color: lightblue;
+                width: 250px;
+                height: 80px;
+                padding: 20px 20px 20px 20px;
+                margin: 20px 20px;
+                margin-left: 60px;
+                margin-right: 20px;
+                border: 2px;
+                border-radius: 20px;
+                display: inline-block;
+                text-transform: uppercase;
+                text-shadow: 20px 2px 5px red,20px 2px 5px yellowgreen;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-weight: 500;
+            }
+            .icons{
+                text-align: center;
+                background-color: lightgreen;
+                width: 250px;
+                height: 80px;
+                padding: 20px 20px 20px 20px;
+                margin: 20px 20px;
+                margin-left: 40px;
+                margin-right: 50px;
+                border: 2px;
+                border-radius: 20px;
+                display: inline-block; 
+                text-transform: uppercase; 
+                text-shadow: 20px 2px 5px purple,20px 2px 5px midnightblue; 
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-weight: 500;
+            }
+            .rwd{
+                text-align: center;
+                background-color: orchid;
+                width: 250px;
+                height: 80px;
+                padding: 20px 20px 20px 20px;
+                margin: 20px 20px;
+                margin-left: 40px;
+                margin-right: 50px;
+                border: 2px;
+                border-radius: 20px;
+                display: inline-block;
+                text-transform: uppercase; 
+                text-shadow: 20px 2px 5px greenyellow,20px 2px 5px wheat; 
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-weight: 500; 
+            }
+            .graphics{
+                text-align: center;
+                background-color: powderblue;
+                width: 250px;
+                height: 80px;
+                padding: 20px 20px 20px 20px;
+                margin: 20px 20px;
+                /* margin-left: 40px; */
+                /* margin-right: 50px; */
+                border: 2px;
+                border-radius: 20px;
+                display: inline-block;
+                text-transform: uppercase;
+                text-shadow: 20px 2px 5px red,20px 2px 5px yellow; 
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-weight: 500;
+            }
+            .svg{
+                text-align: center;
+                background-color: midnightblue;
+                width: 250px;
+                height: 80px;
+                padding: 20px 20px 20px 20px;
+                margin: 20px 20px;
+                margin-left: 60px;
+                margin-right: 20px;
+                border: 2px;
+                border-radius: 20px;
+                display: inline-block;
+                text-transform: uppercase;
+                text-shadow: 20px 2px 5px white,20px 2px 5px black;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+                font-weight: 300;
+            }
+            .canvas{
+                text-align: center;
+                background-color: navajowhite;
+                width: 250px;
+                height: 80px;
+                padding: 20px 20px 20px 20px;
+                margin: 20px 20px;
+                margin-left: 40px;
+                margin-right: 50px;
+                border: 2px;
+                border-radius: 20px;
+                display: inline-block;
+                text-transform: uppercase; 
+                text-shadow: 20px 2px 5px darkviolet,20px 2px 5px black;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+                font-weight: 200; 
+            }
+            .raspberrypi{
+                text-align: center;
+                background-color:mediumpurple;
+                width: 250px;
+                height: 80px;
+                padding: 20px 20px 20px 20px;
+                margin: 20px 20px;
+                margin-left: 40px;
+                margin-right: 50px;
+                border: 2px;
+                border-radius: 20px;
+                display: inline-block;
+                text-transform: uppercase;
+                text-shadow: 20px 2px 5px whitesmoke,20px 2px 5px black;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+                font-weight: 200;   
+            }
+            .cybersecurity{
+                text-align: center;
+                background-color: rosybrown;
+                width: 250px;
+                height: 90px;
+                padding-left: 5px;
+                padding-top: 0px;
+                padding-bottom: 30px;
+                /* border: 5px solid black; */
+                /* padding: 10px 10px 10px 10px; */
+                /* margin: 10px 40px; */
+                /* margin-top:10px; */
+                margin: 20px 20px;
+                margin-left: 40px;
+                margin-right: 50px; 
+                /* margin-bottom: 20px; */
+                border: 2px;
+                border-radius: 20px;
+                display: inline-block;
+                text-transform: uppercase;
+                text-shadow: 20px 2px 5px darkviolet,20px 2px 5px black; 
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+                font-weight: 200;
+            }
+            .colors{
+                text-align: center;
+                background-color: yellowgreen;
+                width: 250px;
+                height: 80px;
+                padding: 20px 20px 20px 20px;
+                margin: 20px 20px;
+                margin-left: 60px;
+                margin-right: 20px;
+                border: 2px;
+                border-radius: 20px;
+                display: inline-block;
+                text-transform: uppercase;
+                text-shadow: 20px 2px 5px red,20px 2px 5px black;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+                font-weight: 200;
+            }
+            .git{
+                text-align: center;
+                background-color: whitesmoke;
+                width: 250px;
+                height: 80px;
+                padding: 20px 20px 20px 20px;
+                margin: 20px 20px;
+                margin-left: 40px;
+                margin-right: 50px;
+                border: 2px;
+                border-radius: 20px;
+                display: inline-block; 
+                text-transform: uppercase;
+                text-shadow: 20px 2px 5px darkviolet,20px 2px 5px black;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+                font-weight: 200;  
+            }
+            .matplotlib{
+                text-align: center;
+                background-color:turquoise;
+                width: 250px;
+                height: 80px;
+                padding: 20px 20px 20px 20px;
+                margin: 20px 20px;
+                margin-left: 40px;
+                margin-right: 50px;
+                border: 2px;
+                border-radius: 20px;
+                display: inline-block;
+                text-transform: uppercase;
+                text-shadow: 20px 2px 5px brown,20px 2px 5px black;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-weight: 300;
+            }
+            .numpy{
+                text-align: center;
+                background-color: salmon;
+                width: 250px;
+                height: 80px;
+                padding: 20px 20px 20px 20px;
+                margin: 20px 20px;
+                /* margin-left: 40px; */
+                /* margin-right: 50px; */
+                border: 2px;
+                border-radius: 20px;
+                display: inline-block;
+                text-transform: uppercase;
+                text-shadow: 20px 2px 5px silver,20px 2px 5px black; 
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-weight: 300;
+            }
+            .django{
+                text-align: center;
+                background-color: beige;
+                width: 250px;
+                height: 80px;
+                padding: 20px 20px 20px 20px;
+                margin: 20px 20px;
+                margin-left: 60px;
+                margin-right: 20px;
+                border: 2px;
+                border-radius: 20px;
+                display: inline-block;
+                text-transform: uppercase;
+                text-shadow: 20px 2px 5px lime,20px 2px 5px black;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-weight: 300;
+            }
+            .typescript{
+                text-align: center;
+                background-color: antiquewhite;
+                width: 250px;
+                height: 80px;
+                padding: 20px 20px 20px 20px;
+                margin: 20px 20px;
+                margin-left: 40px;
+                margin-right: 50px;
+                border: 2px;
+                border-radius: 20px;
+                display: inline-block;
+                text-transform: uppercase;
+                text-shadow: 20px 2px 5px palegreen,20px 2px 5px black; 
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-weight: 300;  
+            }
+            .go{
+                text-align: center;
+                background-color:azure;
+                width: 250px;
+                height: 80px;
+                padding: 20px 20px 20px 20px;
+                margin: 20px 20px;
+                margin-left: 40px;
+                margin-right: 50px;
+                border: 2px;
+                border-radius: 20px;
+                display: inline-block;
+                text-transform: uppercase;
+                text-shadow: 20px 2px 5px yellow,20px 2px 5px black; 
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-weight: 300;  
+            }
+            .appml{
+                text-align: center;
+                background-color: blanchedalmond;
+                width: 250px;
+                height: 80px;
+                padding: 20px 20px 20px 20px;
+                margin: 20px 20px;
+                /* margin-left: 40px; */
+                /* margin-right: 50px; */
+                border: 2px;
+                border-radius: 20px;
+                display: inline-block;
+                text-transform: uppercase;
+                text-shadow: 20px 2px 5px red,20px 2px 5px black; 
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-weight: 300;
+            }
+            .angularjs{
+                text-align: center;
+                background-color: mistyrose;
+                width: 250px;
+                height: 80px;
+                padding: 20px 20px 20px 20px;
+                margin: 20px 20px;
+                margin-left: 60px;
+                margin-right: 20px;
+                border: 2px;
+                border-radius: 20px;
+                display: inline-block;
+                text-transform: uppercase;
+                text-shadow: 20px 2px 5px deeppink,20px 2px 5px black;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: 500;
+            }
+            .asp{
+                text-align: center;
+                background-color: lavenderblush;
+                width: 250px;
+                height: 80px;
+                padding: 20px 20px 20px 20px;
+                margin: 20px 20px;
+                margin-left: 40px;
+                margin-right: 50px;
+                border: 2px;
+                border-radius: 20px;
+                display: inline-block;
+                text-transform: uppercase; 
+                text-shadow: 20px 2px 5px blue,20px 2px 5px black;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: 500;  
+            }
+            .scipy{
+                text-align: center;
+                background-color:steelblue;
+                width: 250px;
+                height: 80px;
+                padding: 20px 20px 20px 20px;
+                margin: 20px 20px;
+                margin-left: 40px;
+                margin-right: 50px;
+                border: 2px;
+                border-radius: 20px;
+                display: inline-block;
+                text-transform: uppercase;
+                text-shadow: 20px 2px 5px white,20px 2px 5px black;   
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: 500;
+            }
+            .pandas{
+                text-align: center;
+                background-color: red;
+                width: 250px;
+                height: 80px;
+                padding: 20px 20px 20px 20px;
+                margin: 20px 20px;
+                /* margin-left: 40px; */
+                /* margin-right: 50px; */
+                border: 2px;
+                border-radius: 20px;
+                display: inline-block; 
+                text-transform: uppercase;
+                text-shadow: 20px 2px 5px wheat,20px 2px 5px black;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: 500;
+            }
+            .excel{
+                text-align: center;
+                background-color: rosybrown;
+                width: 600px;
+                height: 100px;
+                padding: 20px 20px 20px 20px;
+                margin: 20px 20px;
+                margin-left: 65px;
+                margin-bottom: 50px;
+                border: 2px;
+                display: inline-block;
+                text-transform: uppercase;
+                text-shadow: 20px 2px 5px darkturquoise,20px 2px 5px black;
+                font-family: fantasy;
+                font-weight: 500;  
+            }
+            .dsa{
+                text-align: center;
+                background-color: goldenrod;
+                width: 600px;
+                height: 100px;
+                padding: 20px 20px;
+                margin: 20px 20px;
+                margin-left: 65px;
+                margin-bottom: 50px;
+                border: 2px;
+                display: inline-block;
+                text-shadow: 20px 2px 5px green,20px 2px 5px violet;
+                font-family: fantasy;
+                font-weight: 500;  
+            }
+            .ml{
+                text-align: center;
+                background-color: mistyrose;
+                width: 600px;
+                height: 100px;
+                padding: 20px 20px 20px 20px;
+                margin: 20px 20px;
+                margin-left: 65px;
+                margin-right: 40px;
+                margin-bottom: 50px;
+                border: 2px;
+                display: inline-block;
+                text-transform: uppercase;
+                text-shadow: 20px 2px 5px darkviolet,20px 2px 5px black;
+            }
+            .ai{
+                text-align: center;
+                background-color: firebrick;
+                width: 600px;
+                height: 100px;
+                padding: 20px 20px 20px 20px;
+                margin: 20px 20px;
+                margin-left: 30px;
+                margin-right: 70px;
+                border: 2px;
+                display: inline-block;
+                text-transform: uppercase;
+                text-shadow: 20px 2px 5px wheat,20px 2px 5px black;
+                font-family: sans-serif;
+                font-weight: 500;
+            }
+            .a{
+                background-color: black;
+                border-radius: 20px;
+                width: 250px;
+                height: 50px;
+                color: white;
+                text-decoration: none;
+                text-transform: uppercase;
+                text-shadow: 20px 2px 5px darkviolet,20px 2px 5px black;
+                font-family: sans-serif;
+                font-weight: 500;
+            }
+             .b{
+                text-decoration: none;
+                color: black;
+             }
+             .c:hover, .ch:hover, .r:hover, .kotlin:hover, .json:hover, .nodejs:hover{
+                font-family: 'Times New Roman', Times, serif;
+             }
+             .reactjs:hover, .vue:hover, .mysql:hover, .xml:hover{
+                font-family: cursive;
+             }
+             .saas:hover, .icons:hover, .rwd:hover, .graphics:hover{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+             }
+             .svg:hover, .canvas:hover, .raspberrypi:hover, .cybersecurity:hover{
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+             }
+             .colors:hover, .git:hover, .matplotlib:hover, .numpy:hover{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+             }
+             .django:hover, .typescript:hover, .go:hover, .appml:hover{
+                font-family: monospace;
+             }
+             .angularjs:hover, .asp:hover, .scipy:hover, .pandas:hover{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+             }
+             .excel:hover, .ai:hover, .dsa:hover, .ml:hover{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+             }
+        </style>
+    </head>
+    <body bgcolor="black">
+        <div class="c">
+            <h1><a href="https://www.w3schools.com/c/index.php" class="b">c</a></h1>
+        </div>
+        <div class="ch">
+            <h1><a href="https://www.w3schools.com/cs/index.php" class="b">c#</a></h1>
+        </div>
+        <div class="r">
+            <h1><a href="https://www.w3schools.com/r/default.asp" class="b">r</a></h1>
+        </div>
+        <div class="kotlin">
+            <h1><a href="https://www.w3schools.com/kotlin/index.php" class="b">kotlin</a></h1>
+        </div>
+        <div class="json">
+            <h1><a href="https://www.w3schools.com/js/js_json.asp" class="b">json</a></h1>
+        </div>
+        <div class="nodejs">
+            <h1><a href="https://www.w3schools.com/nodejs/default.asp" class="b">node.js</a></h1>
+        </div>
+        <div class="reactjs">
+            <h1><a href="https://www.w3schools.com/react/default.asp" class="b">react</a></h1>
+        </div>
+        <div class="vue">
+            <h1><a href="https://www.w3schools.com/vue/index.php" class="b">vue</a></h1>
+        </div>
+        <div class="mysql">
+            <h1><a href="https://www.w3schools.com/mysql/default.asp" class="b">mysql</a></h1>
+        </div>
+        <div class="xml">
+            <h1><a href="https://www.w3schools.com/vue/index.php" class="b">xml</a></h1>
+        </div>
+        <div class="saas">
+            <h1><a href="https://www.w3schools.com/sass/default.php" class="b">saas</a></h1>
+        </div>
+        <div class="icons">
+            <h1><a href="https://www.w3schools.com/icons/default.asp" class="b">icons</a></h1>
+        </div>
+        <div class="rwd">
+            <h1><a href="https://www.w3schools.com/css/css_rwd_intro.asp" class="b">rwd</a></h1>
+        </div>
+        <div class="graphics">
+            <h1><a href="https://www.w3schools.com/graphics/default.asp" class="b">graphics</a></h1>
+        </div>
+        <div class="svg">
+            <h1><a href="https://www.w3schools.com/graphics/svg_intro.asp" class="b">SVG</a></h1>
+        </div>
+        <div class="canvas">
+            <h1><a href="https://www.w3schools.com/graphics/canvas_intro.asp" class="b">Canvas</a></h1>
+        </div>
+        <div class="raspberrypi">
+            <h1><a href="https://www.w3schools.com/nodejs/nodejs_raspberrypi.asp" class="b">raspberry pi</a></h1>
+        </div>
+        <!-- <div>
+            <h1><a href=""></a></h1>
+        </div> -->
+        <div class="cybersecurity">
+            <h1><a href="https://www.w3schools.com/cybersecurity/index.php" class="b">cyber security</a></h1>
+        </div>
+        <div class="colors">
+            <h1><a href="https://www.w3schools.com/colors/default.asp" class="b">colors</a></h1>
+        </div>
+        <div class="git">
+            <h1><a href="https://www.w3schools.com/git/default.asp" class="b">git</a></h1>
+        </div>
+        <div class="matplotlib">
+            <h1><a href="https://www.w3schools.com/python/matplotlib_intro.asp" class="b">matplotlib</a></h1>
+        </div>
+        <div class="numpy">
+            <h1><a href="https://www.w3schools.com/python/numpy/default.asp" class="b">numpy</a></h1>
+        </div>
+        <div class="django">
+            <h1><a href="https://www.w3schools.com/django/index.php" class="b">django</a></h1>
+        </div>
+        <div class="typescript">
+            <h1><a href="https://www.w3schools.com/typescript/index.php" class="b">typescript</a></h1>
+        </div>
+        <div class="go">
+            <h1><a href="https://www.w3schools.com/go/index.php" class="b">go</a></h1>
+        </div>
+        <div class="appml">
+            <h1><a href="https://www.w3schools.com/appml/default.asp" class="b">app ml</a></h1>
+        </div>
+        <div class="angularjs">
+            <h1><a href="https://www.w3schools.com/angular/default.asp" class="b">angular js</a></h1>
+        </div>
+        <div class="asp">
+            <h1><a href="https://www.w3schools.com/asp/default.asp" class="b">asp</a></h1>
+        </div>
+        <div class="scipy">
+            <h1><a href="https://www.w3schools.com/python/scipy/index.php" class="b">scipy</a></h1>
+        </div>
+        <div class="pandas">
+            <h1><a href="https://www.w3schools.com/python/pandas/default.asp" class="b">pandas</a></h1>
+        </div>
+        <div class="excel">
+            <h1><a href="https://www.w3schools.com/excel/index.php" class="b">excel</a></h1>
+        </div>
+        <div class="dsa">
+            <h1><a href="https://www.w3schools.com/dsa/index.php" class="b">dsa(Data Structure Algorithms)</a></h1>
+        </div>
+        <div class="ml">
+            <h1><a href="https://www.w3schools.com/python/python_ml_getting_started.asp" class="b">machine learning</a></h1>
+        </div>
+        <div class="ai">
+            <h1><a href="https://www.w3schools.com/ai/default.asp" class="b">artifical intelligrnce</a></h1>
+        </div>
+    </body>
+</html>
