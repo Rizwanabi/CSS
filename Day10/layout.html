@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout</title>
+        <style>
+            .container{
+                 display: grid;
+                 height: 100vh;
+                 grid-template-areas: "header header header"
+                                        "hero hero hero"
+                                        "menu main main"
+                                        "menu banner extra"
+                                        "menu img img"
+                                        "footer footer footer";
+            }
+            .container .header{
+                grid-area: header;
+                background-color: yellow;
+                text-align: center;
+                align-content: center;
+                font-size: large;
+            }
+            .container .hero{
+                grid-area: hero;
+                background-color: blue;
+                color: white;
+                text-align: center;
+                align-content: center;
+                font-size: large;
+            }
+            .container .menu{
+                grid-area: menu;
+                background-color: bisque;
+                text-align: center;
+                align-content: center;
+                font-size: large;
+            }
+            .container .main{
+                grid-area: main;
+                background-color: blueviolet;
+                text-align: center;
+                align-content: center;
+                font-size: large;
+            }
+             .container .banner{
+                grid-area: banner;
+                background-color: chartreuse;
+                text-align: center;
+                align-content: center;
+                font-size: large;
+            } 
+            .container .extra{
+                grid-area: extra;
+                background-color: red;
+                text-align: center;
+                align-content: center;
+                font-size: large;
+            }
+            .container .img{
+                grid-area: img;
+                background-color: pink;
+                text-align: center;
+                align-content: center;
+                font-size: large;
+            }
+            .container .footer{
+                grid-area: footer;
+                background-color: purple;
+                text-align: center;
+                align-content: center;
+                font-size: large;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">Header</header>
+            <section class="hero">Hero</section>  
+            <aside class="menu">Menu</aside>
+            <section class="main">Main</section>  
+            <section class="banner">Banner</section>
+            <section class="extra">Extra</section>
+            <section class="img">Image</section>
+            <footer class="footer">Footer</footer>      
+        </div>
+    </body>
+</html>
