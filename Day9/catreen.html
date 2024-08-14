@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Catreen</title>
+        <style>
+           .navbar{
+                width: 99%;
+                position: fixed;
+                top: 0;
+                display: flex;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                align-items: center;
+                justify-content: space-between; 
+                text-align: center;
+                
+           }
+           .a{
+                text-decoration: none;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                display: flex;
+                column-gap: 40px; 
+           }
+           a:hover{
+           background-color: gray;
+           }
+           .a:visited{
+            color: black;
+           }
+           .img{
+            background-image: url('https://www.w3schools.com/w3images/hamburger.jpg');
+            width: 98vw;
+            height: 100vh; 
+            display: flex;
+            align-items: end;
+            font-size: 30px;
+           }
+           .main{
+            display: flex;
+            margin-top: 60px;
+            justify-content: center;
+            column-gap: 60px;
+           }
+           .main1{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 60px;
+           }
+           .img1{
+             flex-basis:30%;
+             justify-content: center;
+           }
+           .menu{
+             flex-basis:30%;
+           }
+           .menu1{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+           } 
+           .menu2{
+            font-size: 30px;
+            letter-spacing: 5px;
+            text-align: center;
+           }
+           .n{
+            font-size: 20px;
+            letter-spacing: 5px;
+            font-weight: 0px;
+           }
+           .r{
+            font-family: 'Times New Roman', Times, serif;
+            opacity: 0.6;
+           }
+           .contact{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 80px;
+            align-content: space-evenly;
+            margin-left: 150px;
+            margin-right: 150px;
+           }
+           .contact1{
+            display: flex;
+            flex-direction: column;
+            row-gap: 40px;
+           }
+           input{
+            border: none;
+           }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <a href="#" class="a">Gourmet au catering</a>
+                <div class="a">
+                <a href="#1" class="a">About</a>
+                <a href="#2" class="a">Menu</a>
+                <a href="#3" class="a">Contact</a>
+                </div>
+            </div>
+        </header><br>
+        <div class="img">
+            <p style="opacity: 0.6; padding: 30px; padding-bottom: 0px;">Le Catering</p>
+        </div>
+        <main>
+            <div class="main" id="1">
+            <div class="img1">
+                <img src="https://www.w3schools.com/w3images/tablesetting2.jpg" alt="" style="opacity: 0.6;">
+            </div>
+            <div class="menu">
+                    <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: 40px; text-align: center; margin-top: 10px; vertical-align: text-top;">About Catering</p>
+                    <p style="font-family: cursive; font-size: 20px; text-align: center;">Tradition since 1889</p>
+                    <p style="font-family: Georgia, 'Times New Roman', Times, serif; text-align: justify; font-size: 20px;">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients.</p>
+                    <p style="font-family: 'Times New Roman', Times, serif; opacity: 0.6; text-align: justify; font-size: 20px;">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>    
+            </div>
+            </div>
+        </main>
+        <hr style="opacity: 0.6;">
+        <section class="main1" id="2">
+                <div class="menu1">
+                    <div class="menu2">
+                        Our Menu
+                    </div>
+                    <span class="n">Bread Basket</span>
+                    <span class="r">Assortment of fresh baked fruit breads and muffins 5.50</span>
+                    <span class="n">Honey Almond Granola with Fruits</span>
+                    <span class="r">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</span>
+                    <span class="n">Belgian Waffle</span>
+                    <span class="r">Vanilla flavored batter with malted flour 7.50</span>
+                    <span class="n">Scrambled eggs</span>
+                    <span class="r">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</span>
+                    <span class="n">Blueberry Pancakes</span>
+                    <span class="r">With syrup, butter and lots of berries 8.50</span>
+                </div>
+                <div>
+                    <img src="https://www.w3schools.com/w3images/tablesetting.jpg" alt="">
+                </div>
+        </section>
+        <hr style="opacity: 0.6;">
+        <footer class="contact" id="3">
+           <div class="contact1">
+             <div style="font-family: Arial, Helvetica, sans-serif; font-size: 30px; letter-spacing: 5px;">Contact</div>
+             <div>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.
+                 Do not hesitate to contact us.</div>
+            <div style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: large; color: green;">Catering Service, 42nd Living St, 43043 New York, NY</div>
+            <div>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</div>
+            <div class="input">
+                <input type="text" placeholder="Name" size="190" required style="padding: 20px;"><br><br><hr style="opacity: 0.6;">
+                <input type="text" placeholder="Howmany People" size="190" required style="padding: 20px;"><br><br><hr style="opacity: 0.6;">
+                <input type="datetime-local" required style="padding: 20px; width: 190px;"><br><br><hr style="opacity: 0.6;">
+                <input type="text" placeholder="Message/Special Requirements" required size="190" style="padding: 20px;"><br><br>
+                <button style="background-color: hsla(hue, saturation, lightness, alpha); padding: 10px; margin-left: 18px; border-radius: 50px;">SEND MESSAGE</button>
+            </div>
+           </div>
+        </footer>
+    </body>
+</html>
