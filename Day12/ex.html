@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformations Example</title>
+    <style>
+         .translate:hover~img{
+            width: 1000px;
+         }
+         .rotate:hover~img{
+            transform: rotate(60deg);
+         }
+         .scale:hover~img{
+            transform: scaley(2.6);
+         }
+         .skew:hover~img{
+            transform: skew(300deg);
+         }
+         img{
+            transition: all 20s;
+         }
+    </style>
+</head>
+<body>
+    <div class="transform">
+       <button class="translate">translate</button>
+       <button class="rotate">rotate</button>
+       <button class="scale">Scale</a></button>
+       <button class="skew">skew</button><br><br>
+       <img src="mean.png" alt="" width="300px" height="300px" id="img">
+    </div>
+</body>
+</html>
